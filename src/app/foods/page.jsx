@@ -4,7 +4,10 @@ import CartItems from "./CartItems";
 import InputSearch from "@/components/InputSearch";
 
 import style from "./foods.module.css";
-
+export const metadata = {
+  title: "All Foods ",
+  description: "Best fast food in Belkuchi",
+};
 const getFoods = async (search) => {
   const res = await fetch(
     `https://taxi-kitchen-api.vercel.app/api/v1/foods/random?search=${search}`,
